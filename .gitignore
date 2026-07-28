@@ -1,0 +1,177 @@
+# ---------------------------------------------
+# Dependências
+# ---------------------------------------------
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+jspm_packages/
+web_modules/
+
+# Lockfiles de outros gerenciadores (o projeto usa pnpm)
+package-lock.json
+yarn.lock
+bun.lockb
+
+# ---------------------------------------------
+# Build / saída de compilação
+# ---------------------------------------------
+build/
+dist/
+out/
+.tsbuildinfo
+*.tsbuildinfo
+
+# ---------------------------------------------
+# Variáveis de ambiente e segredos
+# ---------------------------------------------
+.env
+.env.*
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+# Mantenha versionado o template de variáveis
+!.env.example
+!.env.sample
+
+# Chaves, certificados e credenciais
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+*.secret
+
+# ---------------------------------------------
+# Prisma
+# ---------------------------------------------
+# ATENÇÃO: prisma/schema.prisma e prisma/migrations/ DEVEM ser versionados.
+# Client gerado (quando o output é customizado para dentro do repo)
+prisma/generated/
+generated/prisma/
+# Bancos SQLite locais (dev/test)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+prisma/*.db
+prisma/*.db-journal
+prisma/dev.db*
+
+# ---------------------------------------------
+# Testes e cobertura
+# ---------------------------------------------
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+junit.xml
+.vitest/
+.vitest-cache/
+
+# ---------------------------------------------
+# Logs
+# ---------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ---------------------------------------------
+# Caches de ferramentas
+# ---------------------------------------------
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+.eslintcache
+.stylelintcache
+.prettiercache
+.parcel-cache/
+.rollup.cache/
+.swc/
+.turbo/
+.rpt2_cache/
+.node_repl_history
+*.tgz
+
+# tsx / ts-node / nodemon
+.ts-node/
+.nodemon.json.local
+
+# ---------------------------------------------
+# Runtime / processos
+# ---------------------------------------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+.pm2/
+uploads/
+storage/
+
+# ---------------------------------------------
+# Docker / infraestrutura local
+# ---------------------------------------------
+docker-compose.override.yml
+.docker/data/
+postgres-data/
+pgdata/
+
+# ---------------------------------------------
+# Deploy / plataformas
+# ---------------------------------------------
+.vercel/
+.netlify/
+.serverless/
+.fly/
+.railway/
+.aws-sam/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ---------------------------------------------
+# Editores e IDEs
+# ---------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.history/
+
+# ---------------------------------------------
+# Sistema operacional
+# ---------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------------------------------------------
+# Gerenciadores de versão do Node
+# ---------------------------------------------
+.node-version.local
+.nvmrc.local
