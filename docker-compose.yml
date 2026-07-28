@@ -1,0 +1,9 @@
+services:
+  gym-pass-pg:
+    image: bitnami/postgresql
+    ports:
+      - ${DATABASE_PORT}:5432
+    environment:
+      - POSTGRESQL_USERNAME=${DATABASE_USER}
+      - POSTGRESQL_PASSWORD={DATABASE_PASS}
+      - POSTGRESQL_DATABASE={DATABASE_NAME}
