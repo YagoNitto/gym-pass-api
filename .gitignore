@@ -158,6 +158,16 @@ pgdata/
 .history/
 
 # ---------------------------------------------
+# Agentes de IA
+# ---------------------------------------------
+# As skills do Prisma sao versionadas em .claude/skills/ como arquivos reais
+# (sem symlink), para que o clone funcione em qualquer SO.
+.windsurf/
+.cursor/
+# Config local do Claude Code (por maquina, nao do time)
+.claude/settings.local.json
+
+# ---------------------------------------------
 # Sistema operacional
 # ---------------------------------------------
 .DS_Store
@@ -175,3 +185,5 @@ $RECYCLE.BIN/
 # ---------------------------------------------
 .node-version.local
 .nvmrc.local
+
+/src/generated/prisma
