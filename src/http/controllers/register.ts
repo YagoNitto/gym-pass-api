@@ -1,6 +1,6 @@
 import type { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod/v4'
-import { PrismaUsersRepository } from '@/repositories/prisma-users-repository.js'
+import { PrismaUsersRepository } from '@/repositories/prisma/prisma-users-repository.js'
 import { RegisterUseCase } from '@/use-cases/register.js'
 
 export async function register(request: FastifyRequest, reply: FastifyReply) {
