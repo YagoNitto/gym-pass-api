@@ -26,6 +26,10 @@
         "noUnusedFunctionParameters": {
           "level": "warn",
           "fix": "none"
+        },
+        "noUnusedPrivateClassMembers": {
+          "level": "warn",
+          "fix": "none"
         }
       }
     }
